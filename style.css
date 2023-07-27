@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #333;
+}
+
+/* Header */
+.main-header {
+    padding: 20px 18px;
+    background-color: #292929;
+}
+
+.main-header > a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family:"Lato";
+    font-size: 21px;
+    font-weight: bold;
+    
+}
+
+
+/* Navbar */
+.main-nav {
+    display: inline-block;
+    width: calc(100% - 201px);
+    text-align: right;
+    margin-left:15px;
+    font-family: "Roboto";
+}
+
+.nav-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+.nav-item > a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    border: 2px solid whitesmoke;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.nav-item >a:hover{
+    border-color: black;
+    background-color: black;
+    transition: linear 0.4s;
+}
+/* Navbar End*/
+
+
+/* Showcase */
+
+.showcase {
+    position: relative;
+    margin: 10px;
+    background-image: url("img/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid;
+    border-image-slice: 2;
+    border-image-source: linear-gradient(to left, #d53a9d, #25507A);
+    height: 500px;
+    z-index: -1;
+}
+
+.showcase > h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    font-family: "Playfair Display";
+    color: white;
+
+
+}

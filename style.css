@@ -4,14 +4,11 @@
     margin: 0;
 }
 
-body {
-    background-color: #333;
-}
 
 /* Header */
 .main-header {
     padding: 20px 18px;
-    background-color: #292929;
+    background-color: #333333;
 }
 
 .main-header > a {
@@ -48,13 +45,13 @@ body {
     text-decoration: none;
     color: white;
     font-weight: 400;
-    border: 2px solid whitesmoke;
+    border-bottom: 1.5px solid whitesmoke;
     padding: 8px;
-    border-radius: 5px;
 }
 
 .nav-item >a:hover{
-    border-color: black;
+    border-color: white;
+    border-bottom: 2px solid;
     background-color: black;
     transition: linear 0.4s;
 }
@@ -62,7 +59,6 @@ body {
 
 
 /* Showcase */
-
 .showcase {
     position: relative;
     margin: 10px;
@@ -85,6 +81,114 @@ body {
     font-size: 80px;
     font-family: "Playfair Display";
     color: white;
-
-
 }
+
+
+/* How it work */
+.how-it-work {
+    text-align: center;
+    padding: 10px;
+    color: #333333;
+    font-family: "Lato";
+}
+
+.section-title {
+    font-size: 30px;
+    margin: 15px;
+}
+.row {
+    margin-bottom: 30px;
+}
+
+.col-3 {
+    display: inline-block;
+    background-color: #333;
+    color: rgb(224, 224, 223);
+    border-radius: 10px;
+    width: 30%;
+    padding: 50px;
+    margin: 10px;
+    text-align: center;
+}
+
+.icon-box h3 {
+    margin: 10px;
+    font-size: 26px;
+    
+}
+
+.icon-box i {
+    color: rgb(224, 224, 223);
+}
+/* How it work end */
+
+
+
+
+/* Feature */
+
+
+.col-2 {
+    display: inline-block;
+    width: calc(50% - 2px);
+    height: 300px;
+    background-color: #333;
+}
+
+.feature___left {
+    background: url("img/woman.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.feature___right{
+    vertical-align: top;
+    color: white;
+    font-family: "Lato";
+    padding: 40px;
+    text-align: center;
+    
+}
+
+.feature___right h3 {
+    margin: 30px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.feature___right p {
+    margin:30px
+}
+
+.btn-secondary {
+    text-decoration: none;
+}
+
+.btn {
+    color: #333;
+    font-family: "Lato";
+    font-size: 16px;
+    background-color: rgb(214, 214, 214);
+    border: 3.5px solid black;
+    padding: 10px 15px
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+    border-color: gray;
+    transition: linear 0.7s;
+}  
+
+
+
+/* .clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+
+} */

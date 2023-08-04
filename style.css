@@ -4,10 +4,18 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 /* Header */
 .main-header {
-    padding: 20px 18px;
+    z-index: 0;
+    width: 100%;
+    opacity: 0.9;
+    padding: 18px;
+    top: 0;
     background-color: #333333;
 }
 
@@ -66,11 +74,11 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 5px solid;
+    border: 3px solid;
     border-image-slice: 2;
     border-image-source: linear-gradient(to left, #d53a9d, #25507A);
-    height: 500px;
-    z-index: -1;
+    height: 300px;
+    z-index: -2;
 }
 
 .showcase > h1 {
@@ -95,6 +103,11 @@
 .section-title {
     font-size: 30px;
     margin: 15px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: "Roboto";
+    color: rgb(92, 92, 92);
+
 }
 .row {
     margin-bottom: 30px;
@@ -126,8 +139,6 @@
 
 
 /* Feature */
-
-
 .col-2 {
     display: inline-block;
     width: calc(50% - 2px);
@@ -180,8 +191,8 @@
 }  
 
 
-
-/* .clearfix::after {
+/*Plans */
+.clearfix::after {
     content: "";
     display: block;
     clear: both;
@@ -189,6 +200,77 @@
 
 .container {
     margin: 0 auto;
-    width: 100%;
+    width: 1000px;
 
-} */
+}
+
+.plan {
+    text-align: center;
+    padding: 5px;
+    width: 33.3%;
+    float: left;
+    color: #525252;
+}
+
+.plan__badge {
+    color: rgb(0, 0, 0);
+    font-family: "Roboto";
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.recommended_plan {
+    color: #fff;
+    background-color: #396EB0!important;
+}
+
+.inner-plan {
+    background: #edf5f7;
+    padding: 25px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+    transition: box-shadow .6s;
+}
+
+.inner-plan:hover {
+    box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.5);
+}
+
+.plan__features {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.plan--featured {
+    position: relative;
+    top: -10px;
+}
+
+.plan--featured li {
+    margin: 5px 0;
+}
+
+.plan__features li {
+    margin: 5px 0;
+    font-family: "Roboto";
+}
+
+
+/* Back to top button */
+#backtotop{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+#backtotop i {
+    color: #FC997C;
+    font-size: 45px;
+    transition: color .6s;
+
+}
+
+#backtotop i:hover {
+    color: #fb6537;
+}
